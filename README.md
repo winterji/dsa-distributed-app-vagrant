@@ -1,5 +1,5 @@
-# kiv-dsa-sem-1
-Distributed application built using vagrant. App consists of monitor and nodes. Monitor supplies static web page with preview of discovered nodes and their colours. Nodes cooperate, decide their own colour and inform the monitor.
+# Distributed app for KIV/DSA
+Distributed application built using vagrant developed as semestral project for course Distributed Systems and Algorithms. App consists of monitor and nodes. Monitor supplies static web page with preview of discovered nodes and their colours. Nodes cooperate, decide their own colour and inform the monitor.
 
 ## Getting started
 Launch the app using script `run.sh`. Usage:
@@ -16,3 +16,6 @@ All nodes periodically check status of the network. They send ping message using
 
 ## Monitor
 Monitor has a static IP address that all nodes know. They periodically send information about their state and also send message about every update on them. Monitor displays it on a static web page on port 5000 that is mapped on port 8080 on the host machine.
+
+## Lincese
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
